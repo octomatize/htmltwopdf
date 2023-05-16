@@ -1,0 +1,66 @@
+{
+  "name": "htmltwopdf",
+  "version": "0.1.2",
+  "description": "Package used to generate HTML supported by Handlebars and convert it to PDF",
+  "author": "Joao Pedro Harbs <harbspj@gmail.com>",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc && tsc-alias -p tsconfig.json",
+    "lint": "eslint src/**/*.ts",
+    "lint-fix": "eslint src/**/*.ts --fix",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "changeset publish",
+    "test": "jest --silent --runInBand --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Octomatize/htmltwopdf.git"
+  },
+  "keywords": [
+    "node",
+    "pdf",
+    "typescript",
+    "html",
+    "convert"
+  ],
+  "bugs": {
+    "url": "https://github.com/Octomatize/htmltwopdf/issues"
+  },
+  "homepage": "https://github.com/Octomatize/htmltwopdf#readme",
+  "dependencies": {
+    "handlebars": "^4.7.7",
+    "pdf-lib": "^1.17.1",
+    "puppeteer": "^20.1.1",
+    "ts-node": "^10.9.1"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.26.0",
+    "@types/jest": "^29.5.1",
+    "@types/node": "^18.7.4",
+    "@typescript-eslint/eslint-plugin": "^5.33.0",
+    "eslint": "^8.22.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^3.4.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-import-helpers": "^1.2.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.3",
+    "jest": "^29.5.0",
+    "jira-prepare-commit-msg": "^1.7.2",
+    "prettier": "^2.7.1",
+    "ts-jest": "^29.1.0",
+    "tsc-alias": "^1.8.2",
+    "tsconfig-paths": "^4.1.0",
+    "typescript": "^4.7.4"
+  }
+}
