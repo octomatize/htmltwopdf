@@ -1,6 +1,6 @@
 {
   "name": "htmltwopdf",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Package used to generate HTML supported by Handlebars and convert it to PDF",
   "author": "Joao Pedro Harbs <harbspj@gmail.com>",
   "license": "MIT",
