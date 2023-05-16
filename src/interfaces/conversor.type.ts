@@ -9,11 +9,11 @@ export interface IHTMLProps<T> {
 
 export interface IPartial {
     name: string;
-    fn: (() => any) | string;
+    fn: ((...args: any) => any) | (() => any) | string;
 }
 export interface IHelper {
     name: string;
-    fn: () => any;
+    fn: (...args: any) => any | (() => any);
 }
 
 export type IPDFProps = IPDFOptions;
